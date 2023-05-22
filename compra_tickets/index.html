@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conf BS As</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style_general.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+<body>
+    <header id="header">
+        <div id="header-logo">
+            <img id="header-img" src="../img/cacLogo.png" class="inline" alt="logo de codo a codo">
+            <h3 id="header-title" class="inline">Conf Bs As</h3>
+        </div>
+    </header>
+    <nav id="navbar" class="inline">
+            <a class="navbar-items inline" href="../pagina_principal/index.html">La conferencia</a>
+            <a class="navbar-items inline" href="../pagina_principal/index.html#oradores">Los oradores</a>
+            <a class="navbar-items inline" href="../pagina_principal/index.html#ubicacion">El lugar y la fecha</a>
+            <a class="navbar-items inline" href="../pagina_principal/index.html#inscripcion">Conviértete en orador</a>
+            <a class="navbar-items inline" href="#main-section-titulo">Comprar tickets</a>
+    </nav>
+
+    <main>
+        <section id="container-promociones">
+        </section>
+        <section>
+            <div id="main-section-titulo">
+                <h5>venta</h5>
+                <h1>Valor del ticket $<span id="precio-unitario">200</span></h1>
+            </div>
+            <form>
+                <div class="container-form">
+                    <div class="container-par-input">
+                        <div><input class="input" type="text" placeholder="Nombre"></div>
+                        <div><input class="input" type="text" placeholder="Apellido"></div>
+                    </div>
+                    <input class="input" type="email" placeholder="Correo">
+                    <div class="container-par-input">
+                        <div>
+                            <label for="compra-ticket-cantidad">Cantidad</label>
+                            <input type="number" min="1" value="1" id="compra-ticket-cantidad" name="compra-ticket-cantidad" class="input" placeholder="Cantidad">
+                        </div>
+                        <div>
+                            <label for="compra-ticket-select">Categoría</label>
+                            <select id="compra-ticket-select" 
+                                name="compra-ticket-select" 
+                                class="input">
+                            </select>
+                    </div>
+                    
+                    </div>
+                    <div id="container-precio-con-desc" class="input">Total a Pagar: $<span id="precio-con-desc"></span></div>
+                    <p id="mostrar-error"></p>
+                    <div class="container-par-input">
+                        <input class="input" type="reset" value="Borrar">
+                        <input class="input" type="button" onclick="mostrarPrecioFinal();" value="Resumen">
+                    </div>
+
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <p>Preguntas frecuentes</p>
+        <p>Contáctanos</p>
+        <p>Prensa</p>
+        <p>Conferencias</p>
+        <p>Términos y condiciones</p>
+        <p>Privacidad</p>
+        <p>Estudiantes</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    
+    <script src="logica.js"></script>
+</body>
+</html>

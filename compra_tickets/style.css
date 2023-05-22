@@ -1,0 +1,148 @@
+/*Pagina de compras: */
+
+#container-promociones {
+    width: 70vw;
+    margin: 3em auto;
+    display: flex;
+    flex-direction: column;
+}
+#container-promociones h3, #container-promociones h4 {
+    font-size: clamp(.8em, 5vw, 1.8em);
+}
+#container-promociones p {
+    font-size: clamp(.6em, 3.5vw, 1.6em);
+    color: #818181;
+}
+
+.promociones {
+    width: 100%;
+    height: 70vw;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1em;
+}
+.promociones-contenido {
+    text-align: center;
+}
+
+.promociones:first-child {
+    border: 2px #4595f7 solid;
+}
+.promociones:nth-child(2) {
+    border: 2px #5cea5c solid;
+}
+.promociones:nth-child(3) {
+    border: 2px #f0e849 solid;
+}
+.container-form {
+    width: 70%;
+    margin: 0 auto 3em auto;
+    position: relative;
+    color: rgb(105, 105, 105);
+    font-size: .625em;
+}
+
+#main-section-titulo *{
+    text-transform: uppercase;
+}
+#main-section-titulo h5{
+    font-size: .8em;
+    font-weight: 100;
+}
+#main-section-titulo h1{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+.container-par-input {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.container-par-input div{
+    width: 49%;
+    position: relative;
+
+}
+label {
+    display: block;
+}
+.input {
+    padding: .5em;
+    margin: 8px 0 17px 0;
+    border: solid 1.9px rgb(219, 219, 219);
+    border-radius: 5px;
+    width: 100%;
+    outline-color: rgb(159, 159, 159);
+    box-sizing: border-box;
+    color: rgb(70, 70, 70);
+    transition: all .4s;
+}
+
+.input:hover {
+    border-color: rgb(159, 159, 159);
+    transition: all .4s;
+}
+
+.input[type=button],.input[type=reset]{
+    background-color: #aacf33;
+    color: #fafafa;
+    border: .1px #99bf1c solid;
+    transition: all 400ms;
+}
+.input[type=button]:hover, .input[type=reset]:hover{
+    background-color: #89a725;
+    transition: all 400ms;
+}
+
+.input+.input {
+    margin-left: .6rem;
+}
+
+#main-section-titulo {
+    text-align: center;
+}
+
+#container-precio-con-desc{
+    box-sizing: border-box;
+    padding: 1em;
+    background-color: #d0e8ff;
+    border: .1px #b7dbff solid;
+}
+
+#mostrar-error {
+    color: #ff4419;
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (min-width: 620px){
+    #container-promociones {
+        width: 70vw;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 3em auto;
+    }
+    #container-promociones * {
+        padding: .3em; margin: 0;
+        max-width: 18em; max-height: 18em;
+    }
+    #container-promociones h3, #container-promociones h4 {
+        font-size: clamp(.8em, 2.5vw, 1.8em);
+    }
+    #container-promociones p {
+        font-size: clamp(.6em, 1.8vw, 1em);;
+    }
+    .promociones {
+        width: 33%;
+        height: 23.3vw;
+    }
+}
+
+

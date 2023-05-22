@@ -1,53 +1,6 @@
-:root {
-    --txt-hover: rgb(102, 121, 129);;
-    --txt-default: rgb(250,250,250);
-    --verde: rgb(150, 201, 62);
-    --gris-oscuro: rgb(67, 78, 83);
-}
-
-#navbar {
-    text-align: center;
-    padding: 1.6em 1.2em 1.6em;
-    background-color: rgb(43, 50, 53);
-    color: var(--txt-default);
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 3;
-    opacity: .9;
-}
-#navbar-menu a{
-    text-decoration: none;
-    color: var(--txt-default);
-    transition: all .1s;
-
-}
-#navbar-menu a:hover{
-    color: var(--txt-hover);
-    transition: all .4s;
-}
-
-#navbar-logo{
-    padding: 0 0 25px 0;
-}
-#navbar-img {
-    width: 8.6em;
-    padding: 0;
-    margin: 0;
-}
-
-#navbar-title {
-    padding: 0 !important;
-    margin: 5px;
-    
-}
-
 #intro-txt{
     margin: 0 auto;
     box-sizing: content-box; 
-}
-.navbar-menu-items {
-    padding-left: 2em;
 }
 #intro-txt p{
     padding: 0; margin: 0;
@@ -56,7 +9,7 @@
 #intro {
     width: 100%;
     height: 60vh;
-    background: rgba(0, 0, 0, 0.6) url(img/fondoIntrod.jpeg);    
+    background: rgba(0, 0, 0, 0.6) url(../img/fondoIntrod.jpeg);    
     text-align: center;
     color: rgb(220, 220, 220);
     background-blend-mode: darken;
@@ -103,36 +56,13 @@
     border-bottom: black dotted 2px;
 }
 #inscripcion-form {
-    width: 70%;
+    width: 90%;
+    max-width: 60em;
     margin: 0 auto;
 }
 #inscripcion-form div input[type="submit"]{
     background-color: var(--verde);
 }
-
-
-#footer{
-    text-align: center;
-    padding: 2em;
-    background: linear-gradient(to left ,rgb(74, 105, 123), rgb(42, 57, 64));
-}
-#footer p{
-    display: inline;
-    padding: 8px;
-    color: var(--txt-default);
-    transition: all .1s;
-
-
-}
-#footer p:hover {
-    color: var(--txt-hover);
-    transition: all .4s;
-}
-/*clases generales */
-.inline {
-    display: inline;
-}
-
 
 @media only screen and (min-width: 480px){
     #intro {
@@ -147,28 +77,11 @@
     }
 }
 @media only screen and (min-width: 820px){
-    #narbar-logo {
-        text-align: right;
-
-    }
     #oradores-cards {
         flex-direction: row;
     }
     #oradores-cards div {
         margin: 0;
-    }
-    #footer p {
-        padding: 15px;
-    }
-    #navbar {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    #navbar *{
-        display: inline;
-        padding: 0 20px 0 20px;
     }
     #ubicacion {
         display: flex;
@@ -183,5 +96,4 @@
         position: static;
         background: var(--gris-oscuro);
     }
-
 }
